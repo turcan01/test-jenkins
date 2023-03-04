@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+  - name: Install apache
+    yum:
+      name: httpd
+      state: present
+    when: inventory_hostname in groups['webserver']
+
+  - name: Install database
+    yum:
+      name: mariadb
+      state: present
+    when: inventory_hostname in groups['dbserver']   
+  
