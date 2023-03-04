@@ -55,7 +55,7 @@ module "route" {
 }
 
 ##If you wanna install NAT
-/*
+
 #Create public route table
 module "route-table-public" {
   source = "./modules/aws_route_table"
@@ -88,7 +88,7 @@ module "route-nat" {
   route_table_id = module.route-table-private.id
   gateway_id     = module.nat-gateway.id
 }
-*/
+
 
 #Create security groups and rules
 #--------------------------------------------------------------------
