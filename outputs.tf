@@ -1,10 +1,9 @@
-output "instance1" {
-    value= module.aws_ec2.ec2_instance1.public_ip
+output "instances1" {
+    value = module.ec2_instance1.ipv4
 }
-output "instance2" {
-    value= module.aws_ec2.ec2_instance2.public_ip
+output "instances2" {
+    value = module.ec2_instance2.ipv4
 }
 output "rds_endpoint" {
-    value = module.rds_endpoint
-  
+    value = module.rds.endpoint
 }
