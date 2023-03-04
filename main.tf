@@ -284,7 +284,7 @@ module "alb-www-public-listener-80" {
 module "route53_record" {
   source      = "./modules/aws_route53_record"
   lb_dns_name = module.alb.alb_dns
-  dns_name    = "wordpress.chicagotentech.com" #replace with your dns name
-  zone_id     = "Z06088192BZVS7VV07ORX"        #replace with your zone id 
+  dns_name    = "wordpress.turcanguvener.com" #replace with your dns name
+  zone_id     = "Z067122623DZ6ABQ06AE7"        #replace with your zone id 
 }
 
