@@ -13,7 +13,7 @@ pipeline {
                 sh 'terraform init'
             }
         }
-        stage('Terraform plan'){
+        stage('Terraform plan') {
             when { expression { params.ExecuteAction == 'build'} }
             steps{
                 sh 'terraform plan'
