@@ -16,8 +16,8 @@ pipeline {
         stage('Terraform plan'){
             when { expression { params.ExecuteAction == 'build'} }
             steps{
-             sh 'terraform plan'
-             sh 'terraform apply --auto-approve'
+                sh 'terraform plan'
+                sh 'terraform apply --auto-approve'
             }
         }
     }
