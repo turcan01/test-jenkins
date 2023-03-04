@@ -1,5 +1,5 @@
 data "aws_secretsmanager_secret_version" "creds" {
-  secret_id = "terraform_project_rds_credentials"
+  secret_id = "rds"
 }
 
 locals {
